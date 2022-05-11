@@ -1,15 +1,17 @@
-body {
-  padding: 30px 30px;
+body {padding: 0 10px;}
+.body__inner {margin: 0 auto;text-align: center;display: flex;gap: 10px;}
+h1 {margin: 0;padding: 0;margin-bottom: 25px;text-align: center;}
+h2 {margin: 0;padding: 0;margin-bottom: 10px;font-size: 28px;}
+h3 {margin: 0;padding: 0;margin-bottom: 10px;font-size: 24px;}
+p{font-size: 18px;margin: 0;padding: 0;margin-bottom: 10px;}
+code{display: block;font-size: 18px;margin: 0;padding: 0;margin-bottom: 20px;border: 1px dashed gray;width: 100%;}
+
+.remember{
+  font-size: 20px;
+  font-weight: 500;
+  color: red;
 }
 
-.body__inner {
-  margin: 0 auto;
-  text-align: center;
-
+.learn{
+  max-width: 50%;
 }
-
-h1 {}
-
-h2 {}
-
-p{}
