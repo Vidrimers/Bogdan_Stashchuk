@@ -1,0 +1,34 @@
+.toggle-video{display: none;margin: 0 auto 20px;border-radius: 30px;}
+.toggle-video--active{display: block;}
+
+.toggle{
+  font-size: 18px;
+  color: gray;
+  border: none;
+}
+.toggler{
+  display: none;
+  width: 700px;
+  /* width: 100%; */
+  padding: 5px 10px;
+  margin: 0 auto;
+  border: 1px solid black;
+  border-radius: 0 0 30px 30px;
+  text-align: center;
+  background: rgba(236, 236, 236, .5);
+}
+.toggler--active{
+  display: block;
+}
+.toggler-expressions--active{
+  display: block;
+}
+.toggler-vars--active{
+  display: block;
+}
+.toggler-primitive--active{
+  display: block;
+}
+.toggler-typelink--active{
+  display: block;
+}

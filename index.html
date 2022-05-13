@@ -7,81 +7,155 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Богдан Стащук JS 11 часов</title>
   <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="toggler.css">
 </head>
 
 <body>
-  <h1>Богдан Стащук JS 11 часов</h1>
+  <h1 class="title">Богдан Стащук JS 11 часов</h1>
+  <iframe class="toggle-video" width="460" height="315" src="https://www.youtube.com/embed/CxgOKJh4zWE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+  
   <div class="body__inner">
 
-
+ <h2 class="toggle">Открыть всё</h2>
     <div class="learn">
-      <h2>Выражения</h2>
-      <p class="remember">
-        Любое выражение всегда возвращает значение</p>
-      <code>
-        'abc' - string, если передать строку, то он вернет строку <br>
-        // 'abc'
-      </code>
-      <code>
-        '10' - number, вернет число <br>
-        // '10'
-      </code>
-      <code>
-        5 + 2 - выражение, результатом будет число<br>
-        // 7
-      </code>
-      <code>
-        c = 10 выражение, результатом будет то значение, которое присваивается
-      </code>
-      <code>
-        'good ' + 'evening' - результатом будет одна строка <br>
-        // 'Good evening'
-      </code>
-      <code>
-        a <= b || c !==d выражение, результатом будет значение <br>
-        // true или false
-      </code>
-      <code>
-        myFunction(c, d) - вызов функции пример: console.log() <br>
-        c, d - аргументы с которыми вызываем функцию myFunction <br>
-        // результат функции
-      </code>
-      <code>
-        a + b <br>
-        // Сумма 'a' и 'b'
-      </code>
-      <h3>Выражение присваивания</h3>
-      <code>
-        a = 20 - выражение
-      </code>
-      <h3>Выражение с побочными действиями</h3>
-      <code>
-        a = 5 - выражение <br>
-        b++ - увеличивает значение переменной на единицу <br>
-        myFunction(c, d)
-      </code>
-    </div>
-    <div class="learn">
-      <h2>Переменные</h2>
-      <p class="remember">
-        Переменные дают возможность повторного доступа к значениям
-      </p>
-      <code>
-        myName = "Yaro" - контейнер для хранения значений
-      </code>
-      <h3>Имена переменных</h3>
+      <h2 class="toggle-expressions">1. Выражения</h2>
+      <div class="toggler toggler-expressions">
 
-      <code>
-        PascalCase - каждое имя с заглавной буквы. Для типов и классов<br>
-        DB_PASSWORD - Все большие буквы. значения известны до запуска приложения и не меняются <br>
-        camelCase - первая буква в нижнем регистре
-      </code>
-      <h1>Остановился на Практика создания переменных</h1>
+        <p class="remember">
+          Любое выражение всегда возвращает значение</p>
+        <code>
+          'abc' - string, если передать строку, то он вернет строку <br>
+          // 'abc'
+        </code>
+        <code>
+          '10' - number, вернет число <br>
+          // '10'
+        </code>
+        <code>
+          5 + 2 - выражение, результатом будет число<br>
+          // 7
+        </code>
+        <code>
+          c = 10 выражение, результатом будет то значение, которое присваивается
+        </code>
+        <code>
+          'good ' + 'evening' - результатом будет одна строка <br>
+          // 'Good evening'
+        </code>
+        <code>
+          a <= b || c !==d выражение, результатом будет значение <br>
+          // true или false
+        </code>
+        <code>
+          myFunction(c, d) - вызов функции пример: console.log() <br>
+          c, d - аргументы с которыми вызываем функцию myFunction <br>
+          // результат функции
+        </code>
+        <code>
+          a + b <br>
+          // Сумма 'a' и 'b'
+        </code>
+        <h3>Выражение присваивания</h3>
+        <code>
+          a = 20 - выражение
+        </code>
+        <h3>Выражение с побочными действиями</h3>
+        <code>
+          a = 5 - выражение <br>
+          b++ - увеличивает значение переменной на единицу <br>
+          myFunction(c, d)
+        </code>
+
+      </div>
     </div>
 
+    <div class="learn">
+      <h2 class="toggle-vars">2. Переменные</h2>
+      <div class="toggler toggler-vars">
 
+        <p class="remember">
+          Переменные дают возможность повторного доступа к значениям
+        </p>
+        <code>
+          myName = "Yaro" - контейнер для хранения значений
+        </code>
+  
+        <h3>Имена переменных</h3>
+        <code>
+          PascalCase - каждое имя с заглавной буквы. Для типов и классов<br>
+          DB_PASSWORD - Все большие буквы. значения известны до запуска приложения и не меняются <br>
+          camelCase - первая буква в нижнем регистре
+        </code>
+  
+        <h3>Объявление переменных</h3>
+        <code>
+          let a; - Объявление переменной <br>
+          const c = 10; - Объявление и присваивание <br>
+          a = true; - Присваивание
+          <hr>
+          let a = 10; <br>
+          a = 20; - переобъявление, в итоге будет выводиться 20 <br>
+          let b; - пока значение не присвоено, будет выводиться undefined <br>
+          b = false;
+          <hr>
+          CONST <br>
+          const c = 10; - нужно присваивать сразу <br>
+          c = 20; - если константу присваивать позже, то будет выводиться ошибка
+          //TypError: Assignment to constant variable <br>
+          <hr>
+          Объявление и присваивание <br>
+          console.log(a); - будет выводиться ошибка ReferenceError: a is not defined, потому что переменная не объявлена <br>
+          let a; - объявим <br>
+          console.log(a); - будет выводиться undefined, потому что значение не присвоено <br>
+          a = true; - присвоим <br>
+          console.log(a); - будет выводиться true
+        </code>
+        
+      </div>
+    </div>
+
+    <div class="learn">
+      <h2 class="toggle-primitive">3. Примитивные типы</h2>
+      <div class="toggler toggler-primitive">
+
+        <p class="remember">
+          Тип переменной определяется типом присвоенного значения
+        </p>
+        <code>
+          string (строка) // 'строка' <br> boolean (логический) // true false<br> number (число) // 1 2 3 1.5 0.5 -1 1.25<br> null // - когда значение пока отсутствует,<br> undefined // значения у переменной нет<br> symbol (символ) // используется редко
+          <hr>
+          const a = 10; - число  // number <br>
+          const b = 'abc'; - строка  // string
+        </code>
+        
+      </div>
+    </div>
+
+    <div class="learn">
+      <h2 class="toggle-typelink">4. Ссылочный тип</h2>
+      <div class="toggler1 toggler-typelink">
+
+        <p class="remember">
+          Тип переменной определяется типом присвоенного значения
+        </p>
+        <code>
+          object (объект) // 
+          <hr>
+          const a = 10; - число  // number <br>
+          const b = 'abc'; - строка  // string
+        </code>
+        
+      </div>
+    </div>
+    
+    
   </div>
+  <h1 class="stop">stop on: </h1>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
   <script src="app.js">
+  </script>
+  <script src="drop.js">
   </script>
 </body>
 
