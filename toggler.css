@@ -2,11 +2,9 @@
 .toggle-video--active{display: block;}
 
 .toggle{
-  display: inline-block;
+  display: inline;
   font-size: 18px;
   color: gray;
-  text-align: center;
-  margin: 0 auto;
 }
 .toggler{
   display: none;
@@ -22,21 +20,13 @@
   text-align: center;
   background: rgba(236, 236, 236, .5);
 }
-.toggler--active{
-  display: block;
-}
-.toggler-expressions--active{
-  display: block;
-}
-.toggler-vars--active{
-  display: block;
-}
-.toggler-primitive--active{
-  display: block;
-}
-.toggler-typelink--active{
-  display: block;
-}
-.toggler-dynamic--active{
-  display: block;
-}
+.toggler-card__varsAndTypes--active {display: block;}
+.toggler-card__objects--active {display: block;}
+
+.toggler--active{display: block;}
+.toggler-expressions--active{display: block;}
+.toggler-vars--active{display: block;}
+.toggler-primitive--active{display: block;}
+.toggler-typelink--active{display: block;}
+.toggler-dynamic--active{display: block;}
+.toggler-objects--active{display: block;}

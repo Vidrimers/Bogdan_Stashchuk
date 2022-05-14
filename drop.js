@@ -1,5 +1,7 @@
 $('.title').on('click', function () {$('.toggle-video').toggleClass('toggle-video--active');});
 $('.toggle').on('click', function () {$('.toggler').toggleClass('toggler--active');});
+$('.toggle-subtitle__varsAndTypes').on('click', function () {$('.toggler-card__varsAndTypes').toggleClass('toggler-card__varsAndTypes--active');});
+$('.toggle-subtitle__objects').on('click', function () {$('.toggler-card__objects').toggleClass('toggler-card__objects--active');});
 
 
 $('.toggle-expressions').on('click', function () {
@@ -20,4 +22,8 @@ $('.toggle-typelink').on('click', function () {
 
 $('.toggle-dynamic').on('click', function () {
   $('.toggler-dynamic').toggleClass('toggler-dynamic--active');
+});
+
+$('.toggle-objects').on('click', function () {
+  $('.toggler-objects').toggleClass('toggler-objects--active');
 });

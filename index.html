@@ -15,11 +15,13 @@
   <iframe class="toggle-video" width="460" height="315" src="https://www.youtube.com/embed/CxgOKJh4zWE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
   
   <h2 class="toggle">Открыть всё</h2>
+  <h2 class="subtitle toggle-subtitle__varsAndTypes">Переменные и типы</h2>
+
   <div class="body__inner">
 
     <div class="learn">
       <h2 class="toggle-expressions">1. Выражения</h2>
-      <div class="toggler toggler-expressions">
+      <div class="toggler toggler-card__varsAndTypes toggler-expressions">
 
         <p class="remember">
           Любое выражение всегда возвращает значение</p>
@@ -71,7 +73,7 @@
 
     <div class="learn">
       <h2 class="toggle-vars">2. Переменные</h2>
-      <div class="toggler toggler-vars">
+      <div class="toggler toggler-card__varsAndTypes toggler-vars">
 
         <p class="remember">
           Переменные дают возможность повторного доступа к значениям
@@ -116,7 +118,7 @@
 
     <div class="learn">
       <h2 class="toggle-primitive">3. Примитивные типы</h2>
-      <div class="toggler toggler-primitive">
+      <div class="toggler toggler-card__varsAndTypes toggler-primitive">
 
         <p class="remember">
           Тип переменной определяется типом присвоенного значения
@@ -133,7 +135,7 @@
 
     <div class="learn">
       <h2 class="toggle-typelink">4. Ссылочный тип</h2>
-      <div class="toggler toggler-typelink">
+      <div class="toggler toggler-card__varsAndTypes toggler-typelink">
 
         <p class="remember">
           Набор свойств, где каждое свойство состоит из названия (ключа) и значения свойства
@@ -161,7 +163,7 @@
 
     <div class="learn">
       <h2 class="toggle-dynamic">5. Динамическая типизация</h2>
-      <div class="toggler toggler-dynamic">
+      <div class="toggler toggler-card__varsAndTypes toggler-dynamic">
         <p class="remember">
           Javascript динамически типизируемый язык
         </p>
@@ -197,49 +199,41 @@
         </code>
       </div>
     </div>
+
+
+  </div>
+
+  <h2 class="subtitle toggle-subtitle__objects">Объекты</h2>
+
+  <div class="body__inner">
+
 
     <div class="learn">
-      <h2 class="toggle-dynamic">6. Объетки</h2>
-      <div class="toggler toggler-dynamic">
+      <h2 class=" toggle-objects">6. Объекты</h2>
+      <div class="toggler toggler-card__objects toggler-objects db">
         <p class="remember">
-          Javascript динамически типизируемый язык
+          Практически все сущности Javascript это объекты
         </p>
         <code>
-          let a; <br>
-          a = 'abc' // string <br>
-          значение можно поменять на число <br>
-          a = 10 // number
+          Объект это набор свойств 'Имя:Значение' <br>
+          Объект это тип значений <br>
+          Объект это тип переменных <br>
           <hr>
-          let a = 10; <br>
-          a = true; <br>
-          a = 'Yaro';<br>
-          a = undefined;
+          <div class="img">
+            <img src="/img/objects.png" alt="">
+          </div>
+          city / popular / country - свойства <br>
+          'New York' / true / 'USA' - значение свойства
           <hr>
-          function a(){ // a - название функции<br>
-            console.log('Hey there') // тело функции <br>
-          }<br><br>
-          a() // вызов функции 'Hey there' <br>
-          a = 10; // можно присвоить новое значение переменной a <br>
-          a(); // Если попытаться снова вызвать функцию a, то получим ошибку Uncaught TypeError: a is not a function <br>
-
-          a - переменная, которая содержала в себе функцию, функция была значением переменной
-          <hr>
-          Чтобы не было ошибок, если случайно объявили ту же переменную, которая уже есть нужно объявлять переменную в CONST <br><br> 
-          Пример со стрелочной функцией и const:<br>
-          const a = () => {<br>
-            console.log('Hey there')<br>
-          }<br>
-          a() // будет выводиться строка 'Hey there'<br>
-          a = 10 // при присваивании уже будет показывать другим цветом, что переприсваивать константу запрещено <br>
-          // TypeError: Assignment to constant variable. <br>
-          a() // выполнение программы не дойдет до этой строки
+          Рекомендуется использовать CONST, когда объявляем переменную, которая будет содержать объект, как свое значение <br><br>
+          Порядок свойств в объекте не имеет значения
         </code>
       </div>
     </div>
     
-    
+
   </div>
-  <h1 class="stop">stop on: </h1>
+  <h1 class="stop">stop on: 012 Объекты</h1>
 
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
   <script src="app.js">
