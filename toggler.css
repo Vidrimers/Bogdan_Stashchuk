@@ -2,18 +2,23 @@
 .toggle-video--active{display: block;}
 
 .toggle{
+  display: inline-block;
   font-size: 18px;
   color: gray;
-  border: none;
+  text-align: center;
+  margin: 0 auto;
 }
 .toggler{
   display: none;
   width: 700px;
   /* width: 100%; */
-  padding: 5px 10px;
+  padding: 15px 10px;
   margin: 0 auto;
-  border: 1px solid black;
+  /* border: 1px solid black; */
   border-radius: 0 0 30px 30px;
+  border-radius: 30px;
+  box-shadow:  20px 20px 60px #d9d9d9, -20px -20px 60px #ffffff;
+
   text-align: center;
   background: rgba(236, 236, 236, .5);
 }
@@ -30,5 +35,8 @@
   display: block;
 }
 .toggler-typelink--active{
+  display: block;
+}
+.toggler-dynamic--active{
   display: block;
 }

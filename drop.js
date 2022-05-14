@@ -17,3 +17,7 @@ $('.toggle-primitive').on('click', function () {
 $('.toggle-typelink').on('click', function () {
   $('.toggler-typelink').toggleClass('toggler-typelink--active');
 });
+
+$('.toggle-dynamic').on('click', function () {
+  $('.toggler-dynamic').toggleClass('toggler-dynamic--active');
+});

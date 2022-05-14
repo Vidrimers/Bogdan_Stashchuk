@@ -14,9 +14,9 @@
   <h1 class="title">Богдан Стащук JS 11 часов</h1>
   <iframe class="toggle-video" width="460" height="315" src="https://www.youtube.com/embed/CxgOKJh4zWE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
   
+  <h2 class="toggle">Открыть всё</h2>
   <div class="body__inner">
 
- <h2 class="toggle">Открыть всё</h2>
     <div class="learn">
       <h2 class="toggle-expressions">1. Выражения</h2>
       <div class="toggler toggler-expressions">
@@ -133,18 +133,107 @@
 
     <div class="learn">
       <h2 class="toggle-typelink">4. Ссылочный тип</h2>
-      <div class="toggler1 toggler-typelink">
+      <div class="toggler toggler-typelink">
 
         <p class="remember">
-          Тип переменной определяется типом присвоенного значения
+          Набор свойств, где каждое свойство состоит из названия (ключа) и значения свойства
         </p>
         <code>
-          object (объект) // 
+          object (объект) // переменная хранит ссылку на объект
           <hr>
-          const a = 10; - число  // number <br>
-          const b = 'abc'; - строка  // string
+          0x3151: { <br>
+            a: 10, <br>
+            b: true <br>
+          } <br> <br>
+          // массив <br>
+          0x7213: { <br>
+            [1, 2, 3] <br>
+          } <hr>
+          const objectA = {<br>
+            a: 10,<br>
+            b: true <br>
+          } <br>
+          В памяти создана переменная objectA, сам объект будет записан в другом месте памяти
         </code>
         
+      </div>
+    </div>
+
+    <div class="learn">
+      <h2 class="toggle-dynamic">5. Динамическая типизация</h2>
+      <div class="toggler toggler-dynamic">
+        <p class="remember">
+          Javascript динамически типизируемый язык
+        </p>
+        <code>
+          let a; <br>
+          a = 'abc' // string <br>
+          значение можно поменять на число <br>
+          a = 10 // number
+          <hr>
+          let a = 10; <br>
+          a = true; <br>
+          a = 'Yaro';<br>
+          a = undefined;
+          <hr>
+          function a(){ // a - название функции<br>
+            console.log('Hey there') // тело функции <br>
+          }<br><br>
+          a() // вызов функции 'Hey there' <br>
+          a = 10; // можно присвоить новое значение переменной a <br>
+          a(); // Если попытаться снова вызвать функцию a, то получим ошибку Uncaught TypeError: a is not a function <br>
+
+          a - переменная, которая содержала в себе функцию, функция была значением переменной
+          <hr>
+          Чтобы не было ошибок, если случайно объявили ту же переменную, которая уже есть нужно объявлять переменную в CONST <br><br> 
+          Пример со стрелочной функцией и const:<br>
+          const a = () => {<br>
+            console.log('Hey there')<br>
+          }<br>
+          a() // будет выводиться строка 'Hey there'<br>
+          a = 10 // при присваивании уже будет показывать другим цветом, что переприсваивать константу запрещено <br>
+          // TypeError: Assignment to constant variable. <br>
+          a() // выполнение программы не дойдет до этой строки
+        </code>
+      </div>
+    </div>
+
+    <div class="learn">
+      <h2 class="toggle-dynamic">6. Объетки</h2>
+      <div class="toggler toggler-dynamic">
+        <p class="remember">
+          Javascript динамически типизируемый язык
+        </p>
+        <code>
+          let a; <br>
+          a = 'abc' // string <br>
+          значение можно поменять на число <br>
+          a = 10 // number
+          <hr>
+          let a = 10; <br>
+          a = true; <br>
+          a = 'Yaro';<br>
+          a = undefined;
+          <hr>
+          function a(){ // a - название функции<br>
+            console.log('Hey there') // тело функции <br>
+          }<br><br>
+          a() // вызов функции 'Hey there' <br>
+          a = 10; // можно присвоить новое значение переменной a <br>
+          a(); // Если попытаться снова вызвать функцию a, то получим ошибку Uncaught TypeError: a is not a function <br>
+
+          a - переменная, которая содержала в себе функцию, функция была значением переменной
+          <hr>
+          Чтобы не было ошибок, если случайно объявили ту же переменную, которая уже есть нужно объявлять переменную в CONST <br><br> 
+          Пример со стрелочной функцией и const:<br>
+          const a = () => {<br>
+            console.log('Hey there')<br>
+          }<br>
+          a() // будет выводиться строка 'Hey there'<br>
+          a = 10 // при присваивании уже будет показывать другим цветом, что переприсваивать константу запрещено <br>
+          // TypeError: Assignment to constant variable. <br>
+          a() // выполнение программы не дойдет до этой строки
+        </code>
       </div>
     </div>
     

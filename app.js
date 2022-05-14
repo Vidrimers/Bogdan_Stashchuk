@@ -17,4 +17,23 @@ console.log(myName)
 const myName2 = 'Yaro2'
 console.log(myName2)
 
+const objectA = {
+  a: 10,
+  b: true
+}
+console.log(objectA)
 
+
+// function a(){
+//  console.log('Hello')
+// }
+// a() // функция вызвалась со строкой Хеллоу
+// a = 10 // меняю значение переменной
+// a() // вызываю как функцию, но будет ошибка, потому что переменная перестала быть функцией
+
+const a = () => {
+  console.log('Hello 2')
+}
+a() // 'Hello 2'
+// a = 10 // TypeError: Assignment to constant variable.
+// a()
