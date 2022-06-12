@@ -11,8 +11,8 @@
 </head>
 
 <body>
-  <h1 class="title">Богдан Стащук JS 11 часов</h1>
-  <iframe class="toggle-video" width="460" height="315" src="https://www.youtube.com/embed/CxgOKJh4zWE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+  <h1 class="title">
+    <a href="https://youtu.be/CxgOKJh4zWE" target="_blank">Богдан Стащук JS 11 часов</a></h1 class="title">
   
   <h2 class="toggle">Открыть всё</h2>
   <h2 class="subtitle toggle-subtitle__varsAndTypes">Переменные и типы</h2>
@@ -210,8 +210,8 @@
 
     <div class="learn">
       <h2 class=" toggle-objects">6. Объекты</h2>
-      <div class="toggler toggler-card__objects toggler-objects db">
-        <p class="remember">
+      <div class="toggler toggler-card__objects toggler-objects">
+        <p class="important">
           Практически все сущности Javascript это объекты
         </p>
         <code>
@@ -228,12 +228,75 @@
           Рекомендуется использовать CONST, когда объявляем переменную, которая будет содержать объект, как свое значение <br><br>
           Порядок свойств в объекте не имеет значения
         </code>
+        <h3>Изменение значений свойств объекта</h3>
+          <code>
+            const myCity = {<br>
+              city: <span class="string">'New York'</span>,<br>
+              popular: true,<br>
+              country: <span class="string">'USA'</span><br>
+            } <br>
+            console.log('myCity.city') <br>
+            будет выводиться: <span class="string">"New York"</span> <br>
+            Так же можно изменить значение свойств: <br>
+            myCity.city = 'Las Vegas' - <span class="remember">это точечная запись</span> <br>
+            Если теперь написать в консоле: <br>
+            console.log(myCity.city) <br>
+            будет выводиться: <span class="string">"Las Vegas"</span> <br>
+          </code>
+        <h3>Добавление новых свойств</h3>
+          <code>
+            const myCity = {<br>
+              city: <span class="string">'New York'</span>,<br>
+            } <br>
+            Добавляем новое свойство: <br>
+            myCity.popular = <span class="true">true</span> <br>
+            У объекта теперь будет два свойства <br>
+            <p class="important">Мы не меняем значение константы, мы меняем объект, а сама переменная, как содержала ссылку на объект, так и содержит, мы просто переходим по ссылке и меняем объект</p>
+          </code>
+        <h3>Удаление свойств</h3>
+          <code>
+            const myCity = {<br>
+              city: <span class="string">'New York'</span>,<br>
+              popular: true,<br>
+              country: <span class="string">'USA'</span><br>
+            } <br>
+            Удаляем свойство: <br>
+            <span class="operator">delete</span> myCity.popular = <span class="true">true</span> <br>
+            У объекта теперь будет два свойства <br>
+          </code>
+        <h3>Доступ к значению свойства с использованием скобок</h3>
+          <code>
+            const myCity = {<br>
+              city: <span class="string">'New York'</span>,<br>
+            } <br>
+            Добавляем свойство, которое называется popular: <br>
+            myCity['popular'] = true - <span class="remember">это скобочная запись</span> <br>
+            У объекта теперь будет два свойства <br>
+            Еще можно сначала добавить константу <br>
+            const countryPropertyName = <span class="string">'country'</span> <br>
+            Теперь можно добавить свойство через скобочную запись <br>
+            myCity[countryPropertyName] = <span class="string">'USA'</span> - <span class="remember">здесь просто использована переменная/константа, которая и будет использоваться, как название свойства</span>
+            <p class="important">Такую же скобочную запись можно использовать для удаления свойства</p>
+            delete myCity[countryPropertyName]
+          </code>
+      </div>
+    </div>
+
+    <div class="learn">
+      <h2 class=" toggle-objects">7. Использование переменных</h2>
+      <div class="toggler toggler-card__objects toggler-objects">
+        <h3>Сокращенный формат записи свойств</h3>
+        <code>
+          const name = <span class="string">'Yaro'</span> <br>
+          const postsQty = 23
+        </code>
+        
       </div>
     </div>
     
 
   </div>
-  <h1 class="stop">stop on: 012 Объекты</h1>
+  <h1 class="stop">stop on: 15</h1>
 
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
   <script src="app.js">

@@ -37,7 +37,9 @@ h2{
   /* border-bottom: none; */
 cursor: grab;
 }
-.title{cursor: grab;}
+.title a{cursor: grab;
+text-decoration: none;
+color: black}
 .subtitle{
   margin-bottom: 10px;
   text-align: center;
@@ -54,4 +56,18 @@ cursor: grab;
 }
 img{
   width: 100%;
+}
+.string{
+  color: green;
+}
+.true{
+  color: fuchsia;
+}
+.important{
+  color: crimson;
+  font-weight: bold;
+  font-size: 20px;
+}
+.operator{
+  color: rgb(240, 149, 14);
 }

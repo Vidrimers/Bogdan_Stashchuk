@@ -37,3 +37,15 @@ const a = () => {
 a() // 'Hello 2'
 // a = 10 // TypeError: Assignment to constant variable.
 // a()
+
+const myCity = {
+  city: 'New York',
+}
+
+myCity['popular'] = true
+const countryPropertyName = 'country'
+myCity[countryPropertyName] = 'USA'
+
+delete myCity[countryPropertyName]
+
+console.log(myCity)
